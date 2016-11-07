@@ -11,21 +11,24 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    </script> 
+ 
+    <script type="text/javascript"> 
+      // Grabbed from some yahoo answers thread... 
+      // https://answers.yahoo.com/question/index?qid=20091017142747AAhQqMI
+      // setup pages to randomize 
+      var pages = new Array ("adv1.htm", "adv2.htm", "adv3.htm"); 
+      // generate random number (javascript doesn't allow you to start an array at 1 so we have to start at zero) 
+      var randomPage = randomRange (0, pages.length - 1, false); 
+      // redirect 
+      window.location.href = "http://trumpadvisor.org/" + pages[randomPage]; 
+    </script>
   </head>
   <body>
     <div class="wrapper">
       <header>
         <h1>Trumpadvisor</h1>
         <p>Because if shit goes down, we need to advise trump</p>
-
-        <p class="view"><a href="https://github.com/timodwhit/trumpadvisor">View the Project on GitHub <small>timodwhit/trumpadvisor</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/timodwhit/trumpadvisor/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/timodwhit/trumpadvisor/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/timodwhit/trumpadvisor">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
       <section>
         <h1>
